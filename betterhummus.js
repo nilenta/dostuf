@@ -4757,7 +4757,7 @@ class V2_PublicServers {
         let _root = $("#pubslayerroot");
         if (!_root.length) {
             if (!this.injectRoot()) return null;
-            return global;
+            return this.root;
         }
         return _root[0];
     }
@@ -4772,7 +4772,7 @@ class V2_PublicServers {
 
     render() {
         document.addEventListener('DOMContentLoaded', () => {
-            let root = global;
+            let root = this.root;
             if (!root) {
                 console.log("FAILED TO LOCATE ROOT: .layers");
                 return;
