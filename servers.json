@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "identifier": "1174213444946916137",
+      "name": "BetterHummus",
+      "score": 1403.3962,
+      "spot": null,
+      "events": 699,
+      "members": 100,
+      "online": 100,
+      "enabled": true,
+      "owner": "1167624342616436827",
+      "description": "Official Server for BetterHummus",
+      "region": "us-east",
+      "icon": "https://hummus-cdn.sys42.net/icons/1174213444946916137/8bbeb04a9b03043b9c60a87e63359831.png",
+      "insert_date": "2017-04-13T07:52:08.8064508-07:00",
+      "modified_date": "2017-04-13T07:52:08.8054509-07:00",
+      "tags": ["programming","rpg games","adventure games","sports games","fps games","mmo games","puzzle games","tabletop games","simulation games","other","community","tcg games","retro games","moba games","strategy games","party games","sandbox games","language"],
+      "keywords": null
+    },
+    {
+      "identifier": "1170533118345637980",
+      "name": "natsubot support & updates",
+      "score": 887.0967,
+      "spot": null,
+      "events": 441,
+      "members": 128,
+      "online": 60,
+      "enabled": true,
+      "owner": "1167624342616436827",
+      "description": "Official server for natsubot",
+      "region": "eu-east",
+      "icon": "https://hummus-cdn.sys42.net/icons/1170533118345637980/1573a7fb5f68bae3cc365628cd330df7.png",
+      "insert_date": "2017-05-18T05:16:15.8428749-07:00",
+      "modified_date": "2017-05-18T05:16:15.8428749-07:00",
+      "tags": ["programming","rpg games","adventure games","sports games","fps games","mmo games","puzzle games","tabletop games","simulation games","other","community","tcg games","retro games","moba games","strategy games","party games","sandbox games","language"],
+      "keywords": null
+    }
+  ],
+  "from": 0,
+  "size": 10,
+  "total": 27595,
+  "current": "/?from=0",
+  "next": "/?from=10"
+}
