@@ -4745,7 +4745,7 @@ class V2Components {
     }
 }
 
-class V2_PublicServers {
+/*class V2_PublicServers {
 
     constructor() {}
 
@@ -4779,6 +4779,40 @@ class V2_PublicServers {
             }
             BDV2.reactDom.render(this.component, root);
         });
+    }
+}*/
+class V2_PublicServers {
+
+    constructor() {}
+
+    get component() {
+        return BDV2.react.createElement(V2Components.Layer, { rootId: "pubslayerroot", id: "pubslayer", children: BDV2.react.createElement(V2C_PublicServers, { rootId: "pubslayerroot" }) });
+    }
+
+    get root() {
+        let _root = $("#pubslayerroot");
+        if (!_root.length) {
+            if (!this.injectRoot()) return null;
+            return this.root;
+        }
+        return _root[0];
+    }
+
+    injectRoot() {
+        if (!$(".layers, .layers-20RVFW").length) return false;
+        $(".layers, .layers-20RVFW").append($("<span/>", {
+            id: 'pubslayerroot'
+        }));
+        return true;
+    }
+
+    render() {
+        let root = this.root;
+        if (!root) {
+            console.log("FAILED TO LOCATE ROOT: .layers");
+            return;
+        }
+        BDV2.reactDom.render(this.component, root);
     }
 }
 
