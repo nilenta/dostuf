@@ -986,8 +986,8 @@ PublicServers.prototype.show = function () {
         self.search(list.children().length, false);
     });
 
-    $("button[data-server-invite-code=0Tmfo5ZbORCRqbAd]").off("click").on("click", function(){
-        self.joinServerDirect("0Tmfo5ZbORCRqbAd");
+    $("button[data-server-invite-code=CWGl0d7]").off("click").on("click", function(){
+        self.joinServerDirect("CWGl0d7");
     });
 };
 
@@ -1042,17 +1042,17 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
                     tags.push(self.escape(tag.name));
                 });
 
-                var desc = 
+                var desc = source.description
 
-                html += '<span class="server-tags">'+tags.join(", ")+'</span>';
-                html += '<span class="server-description">'+(source.description == undefined ? "No Description" : self.escape(source.description)) +'</span>';
+                html += '<span class="server-tags">'+source.description+'</span>';
+                html += '<span class="server-description"></span>';
                 html += '</div>';
                 html += '</div>';
                 html += '<div class="server-info server-members">';
                 html += '<span> </span>';
                 html += '</div>';
                 html += '<div class="server-info server-region">';
-                html += '<span>Unknown</span>';
+                html += '<span></span>';
                 html += '</div>';
                 html += '<div class="server-info">';
                 html += '<button data-server-invite-code='+icode+'>Join</button>';
