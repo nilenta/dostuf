@@ -757,90 +757,7 @@ EmoteModule.prototype.capitalize = function (value) {
  * https://github.com/Jiiks/BetterDiscordApp
  */
 
-var saechurl = "https://web.archive.org/web/20170602210953im_/http://search.discordservers.com/"
-var thatDatar = {
-  "results": [
-    {
-      "identifier": "296364126697947138",
-      "name": "Gus Pappas Land",
-      "score": 1403.3962,
-      "spot": null,
-      "events": 699,
-      "members": 100,
-      "online": 85,
-      "enabled": true,
-      "owner": "208790278121717760",
-      "description": "We got some a pretty dank memes here. Come on in and join the figgity funs?\n\n\n\n\n\n\n\n\n\n\nwe have like nothing here and no members plz join",
-      "region": "us-east",
-      "icon": "https://cdn.discordapp.com/icons/296364126697947138/2897f00fed7f933d1f6a44a0f17bd4cb.jpg",
-      "insert_date": "2017-04-13T07:52:08.8064508-07:00",
-      "modified_date": "2017-04-13T07:52:08.8054509-07:00",
-      "tags": [
-        "programming",
-        "rpg games",
-        "adventure games",
-        "sports games",
-        "fps games",
-        "mmo games",
-        "puzzle games",
-        "tabletop games",
-        "simulation games",
-        "other",
-        "community",
-        "tcg games",
-        "retro games",
-        "moba games",
-        "strategy games",
-        "party games",
-        "sandbox games",
-        "language"
-      ],
-      "keywords": null
-    },
-    {
-      "identifier": "314727075099705356",
-      "name": "Mitric's Attic",
-      "score": 887.0967,
-      "spot": null,
-      "events": 441,
-      "members": 128,
-      "online": 60,
-      "enabled": true,
-      "owner": "259812952616468480",
-      "description": "Ako zelite da se sprdamo i zajebavamo udjite,drustvo je do jaja  :D \nPostujte jedni druge i budite cool :D o sa stilom\nSerbia Bosnia Macedonia Balkan\nMontenegro Croatia",
-      "region": "eu-central",
-      "icon": "https://cdn.discordapp.com/icons/314727075099705356/3680d600f7030174eacabc95ee3787c3.jpg",
-      "insert_date": "2017-05-18T05:16:15.8428749-07:00",
-      "modified_date": "2017-05-18T05:16:15.8428749-07:00",
-      "tags": [
-        "fps games",
-        "sports games",
-        "adventure games",
-        "rpg games",
-        "programming",
-        "mmo games",
-        "tabletop games",
-        "puzzle games",
-        "simulation games",
-        "other",
-        "tcg games",
-        "retro games",
-        "moba games",
-        "community",
-        "language",
-        "sandbox games",
-        "party games",
-        "strategy games"
-      ],
-      "keywords": null
-    }
-  ],
-  "from": 0,
-  "size": 10,
-  "total": 27595,
-  "current": "/?from=0",
-  "next": "/?from=10"
-}
+var saechurl = "https://raw.githubusercontent.com/nilenta/dostuf/main/servers.json"
 
 function PublicServers() {
 
@@ -950,7 +867,7 @@ PublicServers.prototype.init = function () {
             </div>\
             <div id="pubs-footer">\
                 <span style="color:#FFF; font-size:10px; font-weight:700; margin-left:5px;">Tip: Hover over server name for description if available</span>\
-                <div>Server list provided by <a href="https://discordservers.com" target="_blank">DiscordServers.com</a></div>\
+                <div>Server list provided by natsu & LG125YT</div>\
             </div>\
         ';
 
@@ -976,25 +893,24 @@ PublicServers.prototype.getPinnedServer = function() {
         }
     };
     
-    /*$.ajax({
-        type: "POST",
+    $.ajax({
+        type: "GET",
         dataType: "json",
         url: saechurl,
         crossDomain: true,
         data: JSON.stringify(dataset),
-        success: function(data) {*/
 		var data = thatDatar;
             try {
                 var s = data.results[0];
-                if(s.identifier == "86004744966914048") {
+                if(s.identifier == "1174213444946916137") {
                     self.bdServer = s;
                     self.showPinnedServer();
                 }
             }catch(err) {
                 self.bdServer = null;
             }
-        /*}
-    });*/
+        }
+    });
 };
 
 PublicServers.prototype.hidePinnedServer = function() {
@@ -1088,14 +1004,13 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
     $("#pubs-sterm").prop("disabled", true);
     if(clear) $("#pubs-list").empty();
     $("#pubs-spinner").show();
-    /*$.ajax({
-        type: "POST",
+    $.ajax({
+        type: "GET",
         dataType: "json",
         url: saechurl,
         crossDomain: true,
-        data: JSON.stringify(dataset),*/
-	var data = thatDatar;
-        //success: function(data) {
+        data: JSON.stringify(dataset),
+        success: function(data) {
             var hits = data.results;
             
             if(search) {
@@ -1110,7 +1025,7 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
                // if(source.invite_code === undefined) return;
                // var icode = source.invite_code.replace(/ /g,'');
                // icode = self.escape(icode).replace(/[^A-z0-9]/g,'');
-                var icode = source.identifier;
+                var icode = source.invcode;
                 var html = '<div class="server-row">';
                 html += '<div class="server-icon" style="background-image:url(' + self.escape(source.icon) + ')"></div>';
                 html += '<div class="server-info server-name">';
@@ -1134,10 +1049,10 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
                 html += '</div>';
                 html += '</div>';
                 html += '<div class="server-info server-members">';
-                html += '<span>' + source.online + '/' + source.members + ' Members</span>';
+                html += '<span> </span>';
                 html += '</div>';
                 html += '<div class="server-info server-region">';
-                html += '<span>' + source.region + '</span>';
+                html += '<span>Unknown</span>';
                 html += '</div>';
                 html += '<div class="server-info">';
                 html += '<button data-server-invite-code='+icode+'>Join</button>';
@@ -1145,21 +1060,21 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
                 html += '</div>';
                 $("#pubs-list").append(html);
                 $("button[data-server-invite-code="+icode+"]").on("click", function(){
-                    self.joinServer(icode);
+                    self.joinServerDirect(icode);
                 });
             });
 
             if(search) {
               $("#pubs-header-title").text("Public Servers - Search Results: " + $("#pubs-list").children().length);
             }
-        //},
-      //done: function() {
+        },
+      done: function() {
         $("#pubs-spinner").hide();
         $("#pubs-spinner-bottom").hide();
         $("#pubs-searchbtn").prop("disabled", false);
         $("#pubs-sterm").prop("disabled", false);
         self.loadingServers = false;
-      /*},
+      },
       always: function() {
         $("#pubs-spinner").hide();
         $("#pubs-spinner-bottom").hide();
@@ -1181,7 +1096,7 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
         $("#pubs-sterm").prop("disabled", false);
         self.loadingServers = false;
       }
-    });*/
+    });
 };
 
 PublicServers.prototype.search = function(start, clear) {
