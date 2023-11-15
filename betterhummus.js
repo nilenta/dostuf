@@ -4771,12 +4771,14 @@ class V2_PublicServers {
     }
 
     render() {
-        let root = global;
-        if (!root) {
-            console.log("FAILED TO LOCATE ROOT: .layers");
-            return;
-        }
-        BDV2.reactDom.render(this.component, root);
+        document.addEventListener('DOMContentLoaded', () => {
+            let root = global;
+            if (!root) {
+                console.log("FAILED TO LOCATE ROOT: .layers");
+                return;
+            }
+            BDV2.reactDom.render(this.component, root);
+        });
     }
 }
 
