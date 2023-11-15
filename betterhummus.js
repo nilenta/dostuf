@@ -1045,7 +1045,7 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
                 var desc = source.description
 
                 html += '<span class="server-tags">'+source.description+'</span>';
-                html += '<span class="server-description"></span>';
+                html += '<span class="server-description">'+source.description+'</span>';
                 html += '</div>';
                 html += '</div>';
                 html += '<div class="server-info server-members">';
