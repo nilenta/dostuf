@@ -985,7 +985,7 @@ PublicServers.prototype.getPinnedServer = function() {
         success: function(data) {*/
 		var data = thatDatar;
             try {
-                var s = data.results[0]._source;
+                var s = data.results[0];
                 if(s.identifier == "86004744966914048") {
                     self.bdServer = s;
                     self.showPinnedServer();
@@ -1104,8 +1104,9 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
               $("#pubs-header-title").text("Public Servers");
             }
 
+
             hits.forEach(function(hit) {
-                var source = hit._source;
+                var source = hit;
                // if(source.invite_code === undefined) return;
                // var icode = source.invite_code.replace(/ /g,'');
                // icode = self.escape(icode).replace(/[^A-z0-9]/g,'');
