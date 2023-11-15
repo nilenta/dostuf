@@ -758,8 +758,7 @@ EmoteModule.prototype.capitalize = function (value) {
  */
 
 var saechurl = "https://web.archive.org/web/20170602210953im_/http://search.discordservers.com/"
-var thatDatar = `
-{
+var thatDatar = JSON.parse(`{
   "results": [
     {
       "identifier": "296364126697947138",
@@ -1031,8 +1030,7 @@ var thatDatar = `
   "total": 27595,
   "current": "/?from=0",
   "next": "/?from=10"
-}
-`
+}`)
 function PublicServers() {
 
 }
