@@ -899,7 +899,7 @@ PublicServers.prototype.getPinnedServer = function() {
         url: saechurl,
         crossDomain: true,
         data: JSON.stringify(dataset),
-		var data = thatDatar;
+		success: function(data) {
             try {
                 var s = data.results[0];
                 if(s.identifier == "1174213444946916137") {
