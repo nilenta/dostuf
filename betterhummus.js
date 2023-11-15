@@ -802,7 +802,7 @@ class PublicServers {
     }
 
     get endPoint() {
-        return 'https://search.discordservers.com';
+        return 'https://web.archive.org/web/20170602210953/http://search.discordservers.com/';
     }
 
     get button() {
