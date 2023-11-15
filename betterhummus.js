@@ -758,7 +758,7 @@ EmoteModule.prototype.capitalize = function (value) {
  */
 
 var saechurl = "https://web.archive.org/web/20170602210953im_/http://search.discordservers.com/"
-var thatDatar = JSON.parse(`{
+var thatDatar = {
   "results": [
     {
       "identifier": "296364126697947138",
@@ -798,27 +798,6 @@ var thatDatar = JSON.parse(`{
       "keywords": null
     },
     {
-      "identifier": "303743144468676608",
-      "name": "BDSMLand",
-      "score": 1007.1651,
-      "spot": null,
-      "events": 501,
-      "members": 469,
-      "online": 153,
-      "enabled": true,
-      "owner": "197822795256692737",
-      "description": "BDSMCord is a BDSM community based server for you to meet new people who are also interested in BDSM-related erotic practices. (16+)\n\nIf you do not see any members on the server, please read the rules.",
-      "region": "eu-central",
-      "icon": "https://cdn.discordapp.com/icons/303743144468676608/d9368889b2a22e852aa30827adc1b586.jpg",
-      "insert_date": "2017-04-19T06:18:31.1198231-07:00",
-      "modified_date": "2017-04-19T06:18:31.1188218-07:00",
-      "categories": [
-        "other",
-        "community"
-      ],
-      "keywords": null
-    },
-    {
       "identifier": "314727075099705356",
       "name": "Mitric's Attic",
       "score": 887.0967,
@@ -854,175 +833,6 @@ var thatDatar = JSON.parse(`{
         "strategy games"
       ],
       "keywords": null
-    },
-    {
-      "identifier": "133018601971122178",
-      "name": "Mt. Wildwood",
-      "score": 550.78516,
-      "spot": null,
-      "events": 273,
-      "members": 575,
-      "online": 110,
-      "enabled": true,
-      "owner": "128578103671914497",
-      "description": "",
-      "region": "us-central",
-      "icon": "https://cdn.discordapp.com/icons/133018601971122178/2f90fc082b47510875e332bcccad4f7b.jpg",
-      "insert_date": "2016-11-17T06:08:43.9965111+00:00",
-      "modified_date": "2016-11-17T06:08:43.9965111+00:00",
-      "categories": [],
-      "keywords": null
-    },
-    {
-      "identifier": "245762329365446656",
-      "name": "Wanderers of Lyzor",
-      "score": 510.75342,
-      "spot": null,
-      "events": 253,
-      "members": 71,
-      "online": 24,
-      "enabled": true,
-      "owner": "221017851149025280",
-      "description": "Lyzor is mostly just a place to chill out and chat. We play games with each other and have pseudo-weekly events and streams. The server is pretty tidy with multiple channels with different purposes. Feel free to pop in and say hi! ",
-      "region": "us-east",
-      "icon": "https://cdn.discordapp.com/icons/245762329365446656/e7849facdcc26ad7f5aacf71dfaeb534.jpg",
-      "insert_date": "2017-01-13T15:09:35.3961149+00:00",
-      "modified_date": "2017-01-13T15:09:35.3961149+00:00",
-      "categories": [
-        "community",
-        "mmo games",
-        "strategy games",
-        "party games",
-        "sandbox games",
-        "tcg games",
-        "adventure games",
-        "rpg games",
-        "simulation games",
-        "tabletop games",
-        "moba games"
-      ],
-      "keywords": null
-    },
-    {
-      "identifier": "242882869544878090",
-      "name": "Full of Trash",
-      "score": 496.7031,
-      "spot": null,
-      "events": 246,
-      "members": 66,
-      "online": 25,
-      "enabled": true,
-      "owner": "239087149339770881",
-      "description": "A server where anyone is welcome! leveling up, events with server games, mmorpgs, mobas, are our main focus. We always keep the chat clean and make sure everyone has a nice time, being active is recommended :)",
-      "region": "us-central",
-      "icon": "https://cdn.discordapp.com/icons/242882869544878090/11d33136af8b21476a5af377b5675a2e.jpg",
-      "insert_date": "2017-04-03T13:44:53.4299735-07:00",
-      "modified_date": "2017-04-03T13:44:53.4299735-07:00",
-      "categories": [
-        "moba games",
-        "mmo games",
-        "rpg games",
-        "other",
-        "community",
-        "fps games",
-        "party games"
-      ],
-      "keywords": null
-    },
-    {
-      "identifier": "310026232672550912",
-      "name": "Some squad",
-      "score": 448.64685,
-      "spot": null,
-      "events": 222,
-      "members": 16,
-      "online": 8,
-      "enabled": true,
-      "owner": "239348304020897792",
-      "description": "A server where you can talk, play games and all. Feel free to join.",
-      "region": "eu-central",
-      "icon": "https://cdn.discordapp.com/icons/310026232672550912/8dfba38b9749392b1963da84d806b763.jpg",
-      "insert_date": "2017-05-05T07:14:44.6606694-07:00",
-      "modified_date": "2017-05-05T07:14:44.6606694-07:00",
-      "categories": [
-        "community"
-      ],
-      "keywords": null
-    },
-    {
-      "identifier": "199140473938378762",
-      "name": "Infinity :(",
-      "score": 444.66278,
-      "spot": null,
-      "events": 220,
-      "members": 159,
-      "online": 44,
-      "enabled": true,
-      "owner": "162655476843020289",
-      "description": "Welcome to Infinity Designs! A Discord server for anyone looking for graphic and motion designs! We have plenty of designers to help you with whatever design you need! From T-Shirt designs to Custom logos that fit your need! \n\nSome designers will require money in return! Make sure to follow the rules and request a design properly to fit our Request Template! Help us grow on our journey to becoming a big Graphic and Motion Design Community!",
-      "region": "eu-west",
-      "icon": "https://cdn.discordapp.com/icons/199140473938378762/a1eb125b28c60bb31715a0597fa86e9c.jpg",
-      "insert_date": "2017-04-28T14:22:21.1007586-07:00",
-      "modified_date": "2017-04-28T14:22:21.1007586-07:00",
-      "categories": [
-        "other"
-      ],
-      "keywords": null
-    },
-    {
-      "identifier": "293901984933609472",
-      "name": "NSFW",
-      "score": 430.60654,
-      "spot": null,
-      "events": 213,
-      "members": 10,
-      "online": 10,
-      "enabled": true,
-      "owner": "200748849277566976",
-      "description": "",
-      "region": "us-east",
-      "icon": "https://cdn.discordapp.com/icons/293901984933609472/6855370360c865eb5c36eaa6a9505991.jpg",
-      "insert_date": "2017-04-30T15:15:38.5237512-07:00",
-      "modified_date": "2017-04-30T15:15:38.5237512-07:00",
-      "categories": [],
-      "keywords": null
-    },
-    {
-      "identifier": "284799683266740234",
-      "name": "disappointment",
-      "score": 422.61188,
-      "spot": null,
-      "events": 209,
-      "members": 138,
-      "online": 30,
-      "enabled": true,
-      "owner": "155552036488740864",
-      "description": "I'm deleting this server at midnight central time.\n\nNo rules. No moderation. What could go wrong?",
-      "region": "eu-central",
-      "icon": "https://cdn.discordapp.com/icons/284799683266740234/b0f1a44d724600130780047f3ad61110.jpg",
-      "insert_date": "2017-03-20T14:38:43.6553016-07:00",
-      "modified_date": "2017-03-20T14:38:43.6553016-07:00",
-      "categories": [
-        "moba games",
-        "strategy games",
-        "party games",
-        "community",
-        "other",
-        "fps games",
-        "sports games",
-        "adventure games",
-        "rpg games",
-        "programming",
-        "mmo games",
-        "puzzle games",
-        "tabletop games",
-        "simulation games",
-        "retro games",
-        "tcg games",
-        "sandbox games",
-        "language"
-      ],
-      "keywords": null
     }
   ],
   "from": 0,
@@ -1030,7 +840,8 @@ var thatDatar = JSON.parse(`{
   "total": 27595,
   "current": "/?from=0",
   "next": "/?from=10"
-}`)
+}
+
 function PublicServers() {
 
 }
