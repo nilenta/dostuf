@@ -1013,7 +1013,7 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
         crossDomain: true,
         data: JSON.stringify(dataset),*/
 	var data = thatDatar;
-        success: function(data) {
+        //success: function(data) {
             var hits = data.hits.hits;
             
             if(search) {
