@@ -60,7 +60,7 @@
 (() => {
     let v2Loader = document.createElement('div');
     v2Loader.className = "bd-loaderv2";
-    v2Loader.title = "BetterDiscord is loading...";
+    v2Loader.title = "BetterHummus is loading...";
     document.body.appendChild(v2Loader);
 })();
 
@@ -112,7 +112,7 @@ var settings = {
     "Custom css auto udpate":     { "id": "bda-css-1", "info": "",                                                  "implemented": true,  "hidden": true,  "cat": "core"},
     "24 Hour Timestamps":         { "id": "bda-gs-6",  "info": "Replace 12hr timestamps with proper ones",          "implemented": true,  "hidden": false, "cat": "core"},
     "Coloured Text":              { "id": "bda-gs-7",  "info": "Make text colour the same as role colour",          "implemented": true,  "hidden": false, "cat": "core"},
-    "BetterDiscord Blue":         { "id": "bda-gs-b",  "info": "Replace Discord blue with BD Blue",                 "implemented": true,  "hidden": false, "cat": "core"},
+    "BetterHummus Blue":         { "id": "bda-gs-b",  "info": "Replace Discord blue with BH Blue",                 "implemented": true,  "hidden": false, "cat": "core"},
     "Developer Mode":             { "id": "bda-gs-8",  "info": "Developer Mode",                                    "implemented": true,  "hidden": false, "cat": "core"},
 
     "Twitch Emotes":              { "id": "bda-es-7",  "info": "Show Twitch emotes",                                "implemented": true,  "hidden": false, "cat": "emote"},
@@ -165,7 +165,7 @@ var bdchangelog = {
     "changes": {
         "0a": {
             "title": "1.78 : Temp support for new settingspanel",
-            "text": "Added temp support for Discord's new settingspanel until v2.",
+            "text": "Added temp support for Hummus's new settingspanel until v2.",
             "img": ""
         },
         "0b": {
@@ -184,8 +184,8 @@ var bdchangelog = {
             "img": ""
         },
         "0e": {
-            "title": "1.78 : BetterDiscord Blue",
-            "text": "Replace Discord blue with BetterDiscord blue!",
+            "title": "1.78 : BetterHummus Blue",
+            "text": "Replace Hummus blue with BetterHummus blue!",
             "img": ""
         }
     },
@@ -218,7 +218,7 @@ Core.prototype.init = function () {
     var lVersion = (typeof(version) === "undefined") ? bdVersion : version;
 
     if (lVersion < supportedVersion) {
-        this.alert("Not Supported", "BetterDiscord v" + lVersion + "(your version)" + " is not supported by the latest js(" + jsVersion + ").<br><br> Please download the latest version from <a href='https://betterdiscord.net' target='_blank'>BetterDiscord.net</a>");
+        this.alert("Not Supported", "BetterHummus v" + lVersion + "(your version)" + " is not supported by the latest js(" + jsVersion + ").<br><br> Please download the latest version from <a href='https://betterdiscord.net' target='_blank'>BetterDiscord.net</a>");
         return;
     }
 
@@ -416,7 +416,7 @@ Core.prototype.constructChangelog = function () {
         '  <div class="modal-inner">' +
         '       <div id="bdcl" class="markdown-modal change-log"> ' +
         '           <div class="markdown-modal-header">' +
-        '               <strong>What\'s new in BetterDiscord JS' + jsVersion + '</strong>' +
+        '               <strong>What\'s new in BetterHummus JS' + jsVersion + '</strong>' +
         '               <button class="markdown-modal-close" onclick=\'$("#bd-wn-modal").remove();\'></button>' +
         '           </div><!--header-->' +
         '           <div class="scroller-wrap">' +
@@ -503,7 +503,7 @@ Core.prototype.alert = function (title, text) {
         <div class="modal-inner" style="box-shadow:0 0 8px -2px #000;">\
             <div class="markdown-modal">\
                 <div class="markdown-modal-header">\
-                    <strong style="float:left"><span>BetterDiscord - </span><span>'+title+'</span></strong>\
+                    <strong style="float:left"><span>BetterHummus - </span><span>'+title+'</span></strong>\
                     <span></span>\
                     <button class="markdown-modal-close" onclick=\'document.getElementById("bda-alert-'+id+'").remove(); utils.removeBackdrop("'+id+'");\'></button>\
                 </div>\
@@ -981,11 +981,11 @@ class PublicServers {
     get bdServerCard() {
 
         let serverInfo = {
-            'name': 'BetterDiscord',
+            'name': 'BetterHummus',
             'icon': 'https://cdn.discordapp.com/icons/86004744966914048/c8d49dc02248e1f55caeb897c3e1a26e.webp',
             'online': '7500+',
             'members': '20000+',
-            'description': 'Official BetterDiscord support server'
+            'description': 'Official BetterHummus support server'
         };
 
         return `<div class="ui-card ui-card-primary bd-server-card" style="margin-top: 5px">
@@ -1885,7 +1885,7 @@ SettingsPanel.prototype.construct = function () {
         <div class="bd-pane control-group" id="bd-plugins-pane" style="display:show;">\
             <div class="bda-slist-top">\
                 <button class="btn btn-primary" onclick=\'betterDiscordIPC.send("asynchronous-message", { "arg": "opendir", "path": "plugindir" }); return false;\'>Open Plugin Folder</button>\
-                <button class="btn btn-primary" onclick=\'window.open("https://betterdiscord.net/plugins"); return false;\'>Get Plugins</button>\
+                <button class="btn btn-primary" onclick=\'window.open("https://hummus.sys42.net/invite/6dHe6mC"); return false;\'>Get Plugins</button>\
             </div>\
             <ul class="bda-slist">\
     ';
@@ -1933,7 +1933,7 @@ SettingsPanel.prototype.construct = function () {
         <div class="bd-pane control-group" id="bd-themes-pane" style="display:none;">\
             <div class="bda-slist-top">\
                 <button class="btn btn-primary" onclick=\'betterDiscordIPC.send("asynchronous-message", { "arg": "opendir", "path": "themedir" }); return false;\'>Open Theme Folder</button>\
-                <button class="btn btn-primary" onclick=\'window.open("https://betterdiscord.net/themes"); return false;\'>Get Themes</button>\
+                <button class="btn btn-primary" onclick=\'window.open("https://hummus.sys42.net/invite/6dHe6mC"); return false;\'>Get Themes</button>\
             </div>\
             <ul class="bda-slist">\
     ';
@@ -1976,8 +1976,8 @@ SettingsPanel.prototype.construct = function () {
 
     settingsInner += '\
         <div style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bottom:0; left:0; right:0;">\
-            <span style="line-height:30px;margin-left:10px;">BetterDiscord v' + ((typeof(version) == "undefined") ? bdVersion : version)  + '(JSv' + jsVersion + ') by Jiiks</span>\
-            <span style="float:right;line-height:30px;margin-right:10px;"><a href="http://betterdiscord.net" target="_blank">BetterDiscord.net</a></span>\
+            <span style="line-height:30px;margin-left:10px;">BetterHummus v' + ((typeof(version) == "undefined") ? bdVersion : version)  + '(JSv' + jsVersion + ') by Jiiks & Natsu</span>\
+            <span style="float:right;line-height:30px;margin-right:10px;"><a href="https://hummus.sys42.net/invite/6dHe6mC" target="_blank">BetterHummus Server</a></span>\
             <span id="bd-changelog" onclick=\'$("body").append(mainCore.constructChangelog());\'>changelog</span>\
         </div>\
         </div></div>\
@@ -1998,7 +1998,7 @@ SettingsPanel.prototype.construct = function () {
 
     settingsButton = $("<div/>", {
         class: "tab-bar-item",
-        text: "BetterDiscord",
+        text: "BetterHummus",
         id: "bd-settings-new",
         click: showSettings
     });
@@ -2084,9 +2084,9 @@ SettingsPanel.prototype.versionInfo = function() {
     let element = $("<div/>", {
         class: 'bd-versioninfo-wrapper'
     }).append($("<span/>", {
-        text: `BetterDiscord v${(typeof(version) === "undefined" ? bdVersion : version)}:${jsVersion} by `
+        text: `BetterHummus v${(typeof(version) === "undefined" ? bdVersion : version)}:${jsVersion} by `
     })).append($("<a/>", {
-        text: 'Jiiks',
+        text: 'Jiiks & Natsu',
         href: 'https://google.com',
         target: '_blank'
     }));
@@ -2464,11 +2464,11 @@ Utils.prototype.injectCss = function (uri) {
 };
 
 Utils.prototype.log = function (message) {
-    console.log('%c[%cBetterDiscord%c] %c'+message+'', 'color: red;', 'color: #303030; font-weight:700;', 'color:red;', '');
+    console.log('%c[%cBetterHummus%c] %c'+message+'', 'color: red;', 'color: #303030; font-weight:700;', 'color:red;', '');
 };
 
 Utils.prototype.err = function (message) {
-    console.log('%c[%cBetterDiscord%c] %c'+message+'', 'color: red;', 'color: red; font-weight:700;', 'color:red;', '');
+    console.log('%c[%cBetterHummus%c] %c'+message+'', 'color: red;', 'color: red; font-weight:700;', 'color:red;', '');
 };
 
 Utils.prototype.importSettings = function() {
@@ -4395,7 +4395,7 @@ class V2C_PublicServers extends BDV2.reactComponent {
                 });
             },
             error: jqXHR => {
-                console.log(`[BetterDiscord] Failed to join server ${server.name}. Reason: `);
+                console.log(`[BetterHummus] Failed to join server ${server.name}. Reason: `);
                 console.log(jqXHR);
                 let servers = self.state.servers;
                 servers.map(s => {
@@ -4411,11 +4411,11 @@ class V2C_PublicServers extends BDV2.reactComponent {
 
     get bdServer() {
         let server = {
-            "name": "BetterDiscord",
+            "name": "BetterHummus",
             "online": "7500+",
             "members": "20000+",
             "categories": ["community", "programming", "support"],
-            "description": "Official BetterDiscord server for support etc",
+            "description": "Official BetterHummus server for support etc",
             "identifier": "86004744966914048",
             "icon": "https://cdn.discordapp.com/icons/86004744966914048/c8d49dc02248e1f55caeb897c3e1a26e.png",
             "nativejoin": true,
@@ -4796,15 +4796,15 @@ class V2_SettingsPanel_Sidebar {
         return BDV2.react.createElement(
             "span",
             null,
-            BDV2.react.createElement(V2Components.SideBar, { onClick: this.onClick, headerText: "BetterDiscord", items: this.items }),
+            BDV2.react.createElement(V2Components.SideBar, { onClick: this.onClick, headerText: "BetterHummus", items: this.items }),
             BDV2.react.createElement(
                 "span",
                 { style: { fontSize: "12px", fontWeight: "600", color: "#72767d", padding: "6px 10px" } },
                 `v${bdVersion}:${jsVersion} by `,
                 BDV2.react.createElement(
                     "a",
-                    { href: "https://github.com/Jiiks/", target: "_blank" },
-                    "Jiiks"
+                    { href: "https://github.com/nilenta/", target: "_blank" },
+                    "Jiiks & Natsu"
                 )
             )
         );
