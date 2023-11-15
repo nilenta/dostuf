@@ -757,6 +757,8 @@ EmoteModule.prototype.capitalize = function (value) {
  * https://github.com/Jiiks/BetterDiscordApp
  */
 
+var saechurl = "https://web.archive.org/web/20170602210953im_/http://search.discordservers.com/"
+
 function PublicServers() {
 
 }
@@ -894,7 +896,7 @@ PublicServers.prototype.getPinnedServer = function() {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "https://69ccb59e91f99116aae036ddceae21b3.us-east-1.aws.found.io:9243/_search",
+        url: saechurl,
         crossDomain: true,
         data: JSON.stringify(dataset),
         success: function(data) {
@@ -1005,7 +1007,7 @@ PublicServers.prototype.loadServers = function(dataset, search, clear) {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "https://69ccb59e91f99116aae036ddceae21b3.us-east-1.aws.found.io:9243/_search",
+        url: saechurl,
         crossDomain: true,
         data: JSON.stringify(dataset),
         success: function(data) {
