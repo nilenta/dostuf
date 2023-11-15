@@ -775,7 +775,7 @@ var thatDatar = {
       "icon": "https://cdn.discordapp.com/icons/296364126697947138/2897f00fed7f933d1f6a44a0f17bd4cb.jpg",
       "insert_date": "2017-04-13T07:52:08.8064508-07:00",
       "modified_date": "2017-04-13T07:52:08.8054509-07:00",
-      "categories": [
+      "tags": [
         "programming",
         "rpg games",
         "adventure games",
@@ -812,7 +812,7 @@ var thatDatar = {
       "icon": "https://cdn.discordapp.com/icons/314727075099705356/3680d600f7030174eacabc95ee3787c3.jpg",
       "insert_date": "2017-05-18T05:16:15.8428749-07:00",
       "modified_date": "2017-05-18T05:16:15.8428749-07:00",
-      "categories": [
+      "tags": [
         "fps games",
         "sports games",
         "adventure games",
