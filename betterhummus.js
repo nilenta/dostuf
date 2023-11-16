@@ -147,8 +147,8 @@ var bdchangelog = {
     "changes": {
 		"0a": {
             "title": "1.8 : BH Blue added back",
-            "text": "Now you can have the custom blue color scheme back. (gif says betterdiscord still i know)",
-            "img": "https://hcdn.sys42.net/attachments/1174215215828726553/1174757029859589810/hummus_2uNeXrD5dy.gif"
+            "text": "Now you can have the custom blue color scheme back.",
+            "img": ""
         }
         /*"0a": {
             "title": "1.77 : Local storage proxy",
