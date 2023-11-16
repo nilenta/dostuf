@@ -67,8 +67,8 @@ betterDiscordIPC.on('asynchronous-reply', (event, arg) => {
 });
 
 var settingsPanel, emoteModule, utils, quickEmoteMenu, opublicServers, voiceMode, pluginModule, themeModule, customCssEditor, dMode;
-var jsVersion = 1.77;
-var supportedVersion = "0.2.81";
+var jsVersion = 1.80;
+var supportedVersion = "0.3.03";
 
 var mainObserver;
 
@@ -95,7 +95,8 @@ var settings = {
     "24 Hour Timestamps":         { "id": "bda-gs-6",  "info": "Replace 12hr timestamps with proper ones",          "implemented": true,  "hidden": false, "cat": "core"},
     "Coloured Text":              { "id": "bda-gs-7",  "info": "Make text colour the same as role colour",          "implemented": true,  "hidden": false, "cat": "core"},
     "Developer Mode":             { "id": "bda-gs-8",  "info": "Developer Mode",                                    "implemented": true,  "hidden": false, "cat": "core"},
-
+	"BetterDiscord Blue":         { "id": "bda-gs-b",  "info": "Replace Discord blue with BD Blue",                 "implemented": true,  "hidden": false, "cat": "core"},
+	
     "Twitch Emotes":              { "id": "bda-es-7",  "info": "Show Twitch emotes",                                "implemented": true,  "hidden": false, "cat": "emote"},
     "FrankerFaceZ Emotes":        { "id": "bda-es-1",  "info": "Show FrankerFaceZ Emotes",                          "implemented": true,  "hidden": false, "cat": "emote"},
     "BetterTTV Emotes":           { "id": "bda-es-2",  "info": "Show BetterTTV Emotes",                             "implemented": true,  "hidden": false, "cat": "emote"},
@@ -124,6 +125,7 @@ var defaultCookie = {
     "bda-gs-6": false,
     "bda-gs-7": false,
     "bda-gs-8": false,
+	"bda-gs-b": false,
     "bda-es-0": true,
     "bda-es-1": true,
     "bda-es-2": true,
@@ -143,7 +145,12 @@ var defaultCookie = {
 
 var bdchangelog = {
     "changes": {
-        "0a": {
+		"0a": {
+            "title": "1.80 : BH Blue added back",
+            "text": "Its back!",
+            "img": ""
+        }
+        /*"0a": {
             "title": "1.77 : Local storage proxy",
             "text": "Implemented a local storage proxy for old plugin support. Do not use it for new plugins! use the bdPluginStorage.get and bdPluginStorage.set",
             "img": ""
@@ -152,10 +159,10 @@ var bdchangelog = {
             "title": "1.76 : Alternate Storage",
             "text": "<a target='blank' href='https://gist.github.com/Jiiks/267113ecb1685f39f4dc4646f9380d55'>https://gist.github.com/Jiiks/267113ecb1685f39f4dc4646f9380d55</a>",
             "img": ""
-        }
+        }*/
     },
     "fixes": {
-        "0a": {
+        /*"0a": {
             "title": "1.77 : Custom css and favourite emote loading",
             "text": "Fixed custom css and favourite emote loading when they are not present",
             "img": ""
@@ -164,7 +171,7 @@ var bdchangelog = {
             "title": "1.76 : Alternate Storage",
             "text": "Both BetterHummus and plugins now use alternate storage",
             "img": ""
-        }
+        }*/
     }
 };
 
@@ -1531,6 +1538,11 @@ SettingsPanel.prototype.init = function () {
     } else {
         dMode.disable();
     }
+	if(settingsCookie["bda-gs-b"]) {
+        $("body").addClass("bd-blue");
+    } else {
+        $("body").removeClass("bd-blue");
+    }
 };
 
 var customCssInitialized = false;
@@ -1603,6 +1615,12 @@ SettingsPanel.prototype.updateSettings = function() {
         $("#twitchcord-button-container").hide();
     }
 
+	if(settingsCookie["bda-gs-b"]) {
+        $("body").addClass("bd-blue");
+    } else {
+        $("body").removeClass("bd-blue");
+    }
+	
     if (settingsCookie["bda-gs-2"]) {
         $("body").addClass("bd-minimal");
     } else {
