@@ -95,7 +95,7 @@ var settings = {
     "24 Hour Timestamps":         { "id": "bda-gs-6",  "info": "Replace 12hr timestamps with proper ones",          "implemented": true,  "hidden": false, "cat": "core"},
     "Coloured Text":              { "id": "bda-gs-7",  "info": "Make text colour the same as role colour",          "implemented": true,  "hidden": false, "cat": "core"},
     "Developer Mode":             { "id": "bda-gs-8",  "info": "Developer Mode",                                    "implemented": true,  "hidden": false, "cat": "core"},
-	"BetterDiscord Blue":         { "id": "bda-gs-b",  "info": "Replace Discord blue with BD Blue",                 "implemented": true,  "hidden": false, "cat": "core"},
+	"BetterHummus Blue":         { "id": "bda-gs-b",  "info": "Replace Hummus blue with BH Blue",                 "implemented": true,  "hidden": false, "cat": "core"},
 	
     "Twitch Emotes":              { "id": "bda-es-7",  "info": "Show Twitch emotes",                                "implemented": true,  "hidden": false, "cat": "emote"},
     "FrankerFaceZ Emotes":        { "id": "bda-es-1",  "info": "Show FrankerFaceZ Emotes",                          "implemented": true,  "hidden": false, "cat": "emote"},
@@ -146,8 +146,8 @@ var defaultCookie = {
 var bdchangelog = {
     "changes": {
 		"0a": {
-            "title": "1.80 : BH Blue added back",
-            "text": "Its back!",
+            "title": "1.8 : BH Blue added back",
+            "text": "Now you can have the custom blue color scheme back.",
             "img": ""
         }
         /*"0a": {
