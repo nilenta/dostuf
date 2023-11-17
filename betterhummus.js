@@ -67,8 +67,8 @@ betterDiscordIPC.on('asynchronous-reply', (event, arg) => {
 });
 
 var settingsPanel, emoteModule, utils, quickEmoteMenu, opublicServers, voiceMode, pluginModule, themeModule, customCssEditor, dMode;
-var jsVersion = 1.80;
-var supportedVersion = "0.3.03";
+var jsVersion = 1.81;
+var supportedVersion = "0.3.04";
 
 var mainObserver;
 
@@ -146,6 +146,11 @@ var defaultCookie = {
 var bdchangelog = {
     "changes": {
 		"0a": {
+            "title": "1.81 : Text Changes",
+            "text": "Changed all text that still said BetterDiscord to BetterHummus",
+            "img": ""
+        },
+		"0b": {
             "title": "1.8 : BH Blue added back",
             "text": "Now you can have the custom blue color scheme back.",
             "img": ""
@@ -162,16 +167,17 @@ var bdchangelog = {
         }*/
     },
     "fixes": {
-        "0a": {
+		"0a": {
+            "title": "1.81 : Fix js issues",
+            "text": "I did a minor oopsy",
+            "img": ""
+        }
+        "0b": {
             "title": "1.8 : Fixed minor bugs",
             "text": "Yeah",
             "img": ""
-        }/*,
-        "0b": {
-            "title": "1.76 : Alternate Storage",
-            "text": "Both BetterHummus and plugins now use alternate storage",
-            "img": ""
-        }*/
+        }
+  
     }
 };
 
@@ -185,7 +191,7 @@ Core.prototype.init = function () {
     var lVersion = (typeof(version) === "undefined") ? bdVersion : version;
 
     if (lVersion < supportedVersion) {
-        this.alert("Not Supported", "BetterHummus v" + lVersion + "(your version)" + " is not supported by the latest js(" + jsVersion + ").<br><br> Please download the latest version from <a href='https://betterdiscord.net' target='_blank'>BetterDiscord.net</a>");
+        this.alert("Not Supported", "BetterHummus v" + lVersion + "(your version)" + " is not supported by the latest js(" + jsVersion + ").<br><br> Please download the latest version from <a href='https://hummus.sys42.net/invite/eXOi438' target='_blank'>The Hummus Server</a>");
         return;
     }
 
