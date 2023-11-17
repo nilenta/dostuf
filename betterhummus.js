@@ -171,7 +171,7 @@ var bdchangelog = {
             "title": "1.81 : Fix js issues",
             "text": "I did a minor oopsy",
             "img": ""
-        }
+        },
         "0b": {
             "title": "1.8 : Fixed minor bugs",
             "text": "Yeah",
