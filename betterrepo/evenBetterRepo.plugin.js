@@ -6,7 +6,7 @@ evenBetterRepo.prototype.getName = function(){
     return 'Even Better Repo';
 };
 evenBetterRepo.prototype.getDescription = function(){
-    return 'Easily access theme & plugin repository from within Discord client<br><br>Want to add your plugin or theme?  Submit a request here:<br><a href="https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new</a>';
+    return 'Easily access theme & plugin repository from within Hummus client<br><br>Want to add your plugin or theme?  DM natsu#1863 on Hummus.';
 };
 evenBetterRepo.prototype.getVersion = function(){
     return '2.5.4';
@@ -33,10 +33,10 @@ evenBetterRepo.prototype.load = function(){
         this.pluginPath = process.env.HOME + "/Library/Preferences/BetterHummus/plugins/";
     }
 
-    this.cssURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/ebr.css';
-    this.repoURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/repo.json';
-    this.pluginURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js';
-    this.versionURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/version';
+    this.cssURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/ebr.css';
+    this.repoURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/repo.json';
+    this.pluginURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/evenBetterRepo.plugin.js';
+    this.versionURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/version';
 
     this.ebrCSS = '';
     this.repo = '';

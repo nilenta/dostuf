@@ -4,16 +4,16 @@
             "name": "Auto Play Gifs",
             "author": "noodlebox",
             "description": "Autoplay gifs without having to hover.",
-            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ResizeX/ResizeX.plugin.js"
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/AutoPlayGifs.plugin.js"
         }
     ],
     "themes": [
         {
-            "name": "Minimal Tweaks 1.0",
-            "author": "HoLLy",
-            "description": "A theme that makes minimal mode more minimal (and fixes some bugs). Requires the LazyLoad Patcher Plugin",
-            "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Themes/MinimalTweaks.theme.css",
-            "preview": "https://camo.githubusercontent.com/417f596227e26c28a8d30b0c650ba48650e0d5e1/687474703a2f2f692e696d6775722e636f6d2f436a6c674a46362e706e67"
+            "name": "ClearVision Amethyst",
+            "author": "Zerthox",
+            "description": "A mystical, purple theme with customizable colors & background!",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/ClearVision_Amethyst.theme.css",
+            "preview": ""
         }
     ]
 }
