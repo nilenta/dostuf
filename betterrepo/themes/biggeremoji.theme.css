@@ -1,0 +1,6 @@
+//META{"name":"Bigger emojis","description":"bigger emojis lol","author":"Natsu","version":"1.0"}*//{}
+
+.emoji.jumboable {
+	width: 48px !important;
+	height: 48px !important;
+}

@@ -1,0 +1,460 @@
+//META { "name": "Default (Mod)", "description": "Default Discord Theme, with a few extras changes.", "author": "Phil (Katana)", "version": "1.2" }*//{}
+
+/* Change Log
+v 1.0 - First Release
+v 1.1 - Added more Rainbow keyframes to Theme Version, DevilBro's ReadAllNotificationButton Plugin, Online Friends,
+		and attempted guild selector.
+v 1.2 - Fixed the user popout background color to match Discord's Dark Theme
+v x.x - text_goes_here
+*/
+
+:root { /* borrowed from アザグエン's Rainbow_Kitten Theme */
+  --rainbow-anim: rainbow 30s infinite linear;
+  --background-overlay: rgba(0,0,0, 0.7);
+  /* Colors */
+	/* Blue */
+  --Color-blue: 133,160,255;
+  --Color-blue-dark: 13,16,25;
+  --Color-blue-darker: 26,32,50;
+	/* Others */
+  --Color-red: 255,133,160;
+  --Color-green: 160,255,133;
+  
+  --theme-version: "Default v1.2 by Katana";
+}
+
+#bd-settings-sidebar>span>span::after{
+    padding-left:10px;
+    display:block;
+    padding-top:5px;
+    margin-bottom:-10px;
+	color: rgba(var(--Color-red), 1);
+    content: var(--theme-version);
+	animation: var(--rainbow-anim);
+}
+/* Public Listing */
+#bd-pub-li {
+	visibility:hidden;
+	height: 20px;
+	}
+	/* rainbow effect */
+@keyframes rainbow 
+{
+	from { -webkit-filter: hue-rotate(0deg); }
+	to { -webkit-filter: hue-rotate(360deg); }
+}
+
+.guilds-wrapper .guilds-error {
+	width:40px;
+	height:40px;
+	line-height:36px;
+}
+.guilds-wrapper .guilds .guild .guild-inner a,
+.guilds-wrapper .guilds .guild,
+.guilds-wrapper .guilds .guild .avatar-small {
+	width:40px;
+	height:40px;
+}
+
+.guilds-wrapper .guilds .guild .avatar-small {
+	width:40px;
+	height:40px;
+	background-size: 40px 40px;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner {
+	line-height:40px;
+}
+
+.guilds-wrapper .guilds .friends-icon {
+	width:40px;
+	height:40px;
+	background-size:25px 19px;
+}
+
+.guilds-wrapper .guilds .friends-icon {
+    background-color: rgba(0,0,0,0.3) !important;
+    background-image: none !important;
+    padding-top:0px;
+}
+
+.guilds-wrapper .guilds .friends-icon:after {
+    display:block;
+    width:40px;
+    height:40px;
+    content:'';
+    background-image: url(https://i.imgur.com/cm6mEXd.gif) !important;
+    background-size:110%;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+	background-size:12px;
+	background-color:rgba(0,0,0,0.8);
+}
+
+.guilds-wrapper .guilds .guild:before,
+.guilds-wrapper .guilds .guild.unread:before,
+.guilds-wrapper .guilds .guild.selected:before {
+	left:-19px;
+	transition:0.2s ease-in-out all;
+}
+
+.guilds-wrapper .guilds {
+	padding:18px 20px 85px 15px;
+}
+
+.guilds-wrapper .guilds .guild .selected {
+	background-color: rgba(var(--Color-blue), 1);
+	border-color: rgba(var(--Color-blue), 1);
+	color: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+}
+#RANbutton-frame {
+	height:20px;
+	margin-bottom:10px;
+	padding:1.5px;
+}
+#RANbutton {
+	color: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+}
+.guilds-wrapper .guilds .friends-online {
+	color: rgba(var(--Color-red), 1);
+	animation: var(--rainbow-anim);
+}
+/* Connecting screen - may not show */
+.connecting
+{
+	background-color: #36393e;
+}
+
+/* settings and friendslist background */
+.layer > .ui-standard-sidebar-view
+{
+	background-color: #36393e;
+	background-position: 50%;
+	background-size: cover;
+	left: 0; top: -35px;
+	width: 100vw;
+	height: 100vh;
+}
+.layer > .sidebar-region .sidebar .side-2nYO0F .ui-standard-sidebar-view
+{
+	background-color: rgba(54, 57, 62, 1);
+}
+.layers .layer #friends 
+{
+	background: transparent;
+}
+
+	/* Add server button */
+.guilds-wrapper .guilds-add 
+{
+	background-color:transparent;
+	border-color: rgba(var(--Color-blue), 0.25);
+	color: rgba(var(--Color-blue), 0.25);
+	animation: var(--rainbow-anim);
+}
+.guilds-wrapper .guilds-add:hover 
+{
+	background-color: rgba(var(--Color-blue-darker), 0.5);
+	border-color: rgba(var(--Color-blue), 1);
+	color: rgba(var(--Color-blue), 1);
+}
+
+/* BOT tag */
+.bot-tag 
+{
+	background: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+	font-size: 10px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	margin-left: 5px;
+	padding: 1px 2px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+	line-height: 16px;
+	flex-shrink: 0;
+}
+
+/* Nitro Tag (Like Bot Tag) */
+.avatar-large[style*="a_"] + .comment .message.first .body .username-wrapper:after {
+	content: 'Nitro';
+	color: white;
+	margin-left: 5px;
+	background: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+    line-height: 16px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border-radius: 3px;
+    margin-left: 6px;
+    padding: 1px 2px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: text;
+}
+
+.member.member-status > .avatar-small[style*="a_"] + .member-inner .member-username:after {
+	content: 'Nitro';
+	color: white;
+	margin-left: 5px;
+	background: rgba(var(--Color-blue), 1);
+	animation: var(--rainbow-anim);
+    line-height: 15px;
+    height: 14px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border-radius: 3px;
+    margin-left: 6px;
+    padding: 1px 2px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.channel-textarea-autocomplete-inner .avatar-small[style*="a_"] + .discord-tag:after,
+.channel-textarea-autocomplete-inner .avatar-small[style*="a_"] + .username:after {
+    content: ' ';
+    position: absolute;
+    background: url(https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.channel.channel-voice:not(.collapsed) .avatar-small[style*="a_"] + span:after {
+    content: ' ';
+    position: absolute;
+    background: url(https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+    margin-top: 1.5px;
+    margin-left: 5px;
+}
+
+.channel .channel-voice li.speaking .avatar-small[style*="a_"] {
+    border-color: #fc964b;
+}
+
+/* Title bar */
+.titlebar
+{
+    background: rgba(54, 57, 62, 1);
+    height:35px!important;
+}
+
+.popout-bottom[style*="overflow: hidden; visibility: visible;"]
+{
+    top:92px!important;
+}
+/* Discord logo */
+.titlebar:after
+{
+    content:url(https://discordapp.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg);
+    #animation: var(--rainbow-anim);
+	position:absolute;
+    top:7px;
+    left:15px;
+    opacity:1;
+    height:20px;
+    width:24px
+}
+/* Discord text */
+.titlebar:before
+{
+    content:url(https://discordapp.com/assets/9babbea9acbfec5302d832bae6c3c184.svg);
+    #animation: var(--rainbow-anim);
+	position:absolute;
+    top:7px;
+    left:36px;
+	#left:580px;
+    opacity:1;
+    height:20px;
+    width:80px
+}
+
+.win-buttons button
+{
+    height:33px!important;
+    width:40px!important;
+    background-size: 25px;
+    background-repeat:no-repeat;
+}
+
+.win-buttons
+{
+    height:36px;
+    right:0px;
+}
+.win-buttons.win-buttons-notice
+{
+    top:0!important
+}
+.app
+{
+    margin-top:30px;
+}
+.separator-win
+{
+    display:none;
+}
+
+/* Radial Status by Zerebos */
+:root {
+    --rs-spacing: 2px; /* spacing between avatar and status */
+    --rs-width: 2px; /* width of the status */
+    --rs-popout-spacing: 3px; /* spacing between avatar and status for user popouts */
+    --rs-popout-width: 4px; /* width of the status for user popouts */
+    --rs-profile-spacing: 3px; /* spacing between avatar and status on modals/profiles */
+    --rs-profile-width: 4px; /* width of the status on modals/profiles */
+    --rs-online-color: #43b581; /* color for online status */
+    --rs-idle-color: #faa61a; /* color for idle status */
+    --rs-dnd-color: #f04747; /* color for dnd status */
+    --rs-offline-color: #636b75; /* color for offline status */
+    --rs-invisible-color: #747f8d; /* color for invisible status - Note this will only show for your own invisibility */
+    --rs-streaming-color: #643da7; /* color for streaming status */
+}
+
+.app {
+	--radial-status: 1;
+}
+
+[class*="avatar-"] [class*="status"],
+#user-profile-modal .status {
+    width:100%!important;
+    background: transparent;
+    border-radius: inherit !important;
+    height: 100%!important;
+    transition: all 200ms ease !important;
+	top: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
+	right: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
+	bottom: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
+	left: calc(-1*var(--rs-spacing) + -1*var(--rs-width)) !important;
+	padding: var(--rs-spacing) !important;
+	transition: all 200ms ease !important;
+	border: var(--rs-width) solid #636b75 !important;
+	margin: 0 !important;
+}
+
+[class*="user-info"] [class*="status"] {
+	border: none !important;
+}
+
+[class*="theme-"] [class*="avatar-"] [class*="idle"],
+[class*="theme-"] [class*="avatar-"] [class*="Idle"],
+#user-profile-modal [class*="idle"] {
+    border-color: var(--rs-idle-color) !important;
+}
+
+[class*="theme-"] [class*="avatar-"] [class*="dnd"],
+[class*="theme-"] [class*="avatar-"] [class*="Dnd"],
+#user-profile-modal [class*="dnd"] {
+    border-color: var(--rs-dnd-color) !important;
+}
+
+[class*="theme-"] [class*="avatar-"] [class*="streaming"],
+[class*="theme-"] [class*="avatar-"] [class*="Streaming"],
+#user-profile-modal [class*="streaming"]{
+    animation: streaming-flash 1.5s linear infinite !important;
+    border-color: var(--rs-streaming-color), 1) !important;
+}
+
+[class*="theme-"] [class*="avatar-"] [class*="online"],
+[class*="theme-"] [class*="avatar-"] [class*="Online"],
+#user-profile-modal [class*="online"] {
+    border-color: var(--rs-online-color) !important;
+}
+
+[class*="theme-"] [class*="avatar-"] [class*="invisible"],
+[class*="theme-"] [class*="avatar-"] [class*="Invisible"],
+#user-profile-modal [class*="invisible"] {
+    border-color: var(--rs-invisible-color) !important;
+}
+
+[class*="theme-"] [class*="avatar-"] [class*="offline"],
+[class*="theme-"] [class*="avatar-"] [class*="Offline"],
+#user-profile-modal [class*="offline"] {
+    border-color: var(--rs-offline-color) !important;
+}
+
+.channel-members .member.member-status-offline .status {
+	display: flex !important;
+}
+
+[class*="avatar-"] [class*="status"].status-typing {
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+	right: 0 !important;
+}
+[class*="avatar-"] [class*="status"].status-typing .spinner .spinner-inner {
+    left: 1px !important;
+    top: 1px !important;
+}
+
+[class*="theme-"] [class*="userPopout-"] [class*="avatar-"],
+[class*="theme-"] #user-profile-modal .avatar-profile {
+    border: none;
+}
+/*     --rs-popout-spacing: 3px;
+    --rs-popout-width: 4px; */
+[class*="theme-"] .userPopout-4pfA0d .avatar-1BXaQj.popout-UKvsJt [class*="status"],
+[class*="theme-"] #user-profile-modal .avatar-profile .status {
+	border-width: var(--rs-popout-width) !important;
+	top: -7px !important;
+	right: -7px !important;
+	bottom: -7px !important;
+	left: -7px !important;
+	padding: var(--rs-popout-spacing) !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	box-sizing: content-box;
+}
+
+[class*="theme-"] #user-profile-modal .avatar-profile .status {
+    border-width: var(--rs-profile-width) !important;
+    padding: var(--rs-profile-spacing) !important;
+}
+
+.channel-members .member, #user-profile-modal .guilds .guild {
+	padding-bottom: calc((var(--rs-spacing) + var(--rs-width))*2) !important;
+	padding-top: calc((var(--rs-spacing) + var(--rs-width))*2) !important;
+}
+
+/* user popout */
+.userPopout-4pfA0d {
+	background-color: #2f3136;
+}
+.headerActivityText-3qBQRo>strong {
+	color: rgba(var(--Color-green), 1);
+}
+.body-3rkFrF {
+	background-color: #42454b;
+}
+.member-role .member-role-add {
+	color: #fff;
+	background-color: #565961;
+	border-color: #6f737d;
+}
+.footer-2J5zqP {
+	background-color: #42454b;
+}
+.footer-2J5zqP .quickMessage-28pD5Y {
+	background-color: #565961;
+	border-color: #6f737d;
+}
+.autocomplete-popout .scrollerWrap-fzNley .autocomplete-scroller {
+	background-color: #42454b;
+}
+.autocomplete-popout .scrollerFade-28dRsO .autocomplete-scroller {
+	background-color: #565961;
+}
+
+.avatarHintInner-1JYcVr {
+	color: rgba(var(--Color-red) ,1);
+}
