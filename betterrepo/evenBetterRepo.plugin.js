@@ -34,8 +34,8 @@ evenBetterRepo.prototype.load = function(){
     }
 
     this.cssURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/ebr.css';
-    this.repoURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/repo.json';
-    this.pluginURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/evenBetterRepo.plugin.js';
+    this.repoURL = 'https://cdn.jsdelivr.net/gh/nilenta/dostuf@latest/betterrepo/repo.json';
+    this.pluginURL = 'https://cdn.jsdelivr.net/gh/nilenta/dostuf@latest/betterrepo/evenBetterRepo.plugin.js';
     this.versionURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/version';
 
     this.ebrCSS = '';
