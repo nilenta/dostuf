@@ -34,7 +34,7 @@ evenBetterRepo.prototype.load = function(){
     }
 
     this.cssURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/ebr.css';
-    this.repoURL = 'https://cdn.jsdelivr.net/gh/nilenta/dostuf@latest/betterrepo/repo.json';
+    this.repoURL = 'https://cdn.jsdelivr.net/gh/nilenta/dostuf@latest/betterrepo/repos.json';
     this.pluginURL = 'https://cdn.jsdelivr.net/gh/nilenta/dostuf@latest/betterrepo/evenBetterRepo.plugin.js';
     this.versionURL = 'https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/version';
 
