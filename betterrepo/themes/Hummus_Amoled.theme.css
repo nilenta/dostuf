@@ -1,0 +1,59 @@
+//META{"name":"Hummus Amoled","description":"Fully black theme.","author":"ElitePrime","version":"1.0"}*//{}
+
+.theme-dark .guilds-wrapper {
+    background: #000;
+}
+.theme-dark .account {
+    height: 70px;
+    background: #000;
+}
+.theme-dark .channel-members {
+    background-color: #000;
+}
+.theme-dark .guild-channels {
+    background-color: #000;
+}
+.theme-dark .guild-channels .channel-text.selected {
+        background: linear-gradient(to right, #272727 85%, #272727);
+}
+.theme-dark .chat .title-wrap {
+    background-color: #000;
+    border-bottom: 3px solid #000
+}
+.theme-dark .guild-header header {
+    background-color: #000;
+}
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
+    background-color: #000;
+}
+.guild-channels .channel-text.selected:before {
+    border-left: 4px solid #fff;
+}
+.guild-inner {
+background-color: #000;
+}
+.channel-textarea-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 12px 10px;
+      border-radius: 2px 0 0 2px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+.theme-dark .search .search-bar {
+    background-color: #000;
+}
+.theme-dark #friends .friends-header {
+    background-color: #000;
+}
+.search-bar {
+    background-color: #000;
+}
+.private-channels {
+    background-color: #000;
+}
+#friends .friends-table {
+    margin-top: 0px;
+}

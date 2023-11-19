@@ -5,14 +5,169 @@
             "author": "noodlebox",
             "description": "Autoplay gifs without having to hover.",
             "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/AutoPlayGifs.plugin.js"
+        },
+		{
+            "name": "Better Emote Sizes",
+            "author": "Metalloriff",
+            "description": "Increases the size of emotes upon hovering over them, and allows you to set a default and hover size for large and small emotes.",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/BetterEmoteSizes.plugin.js"
+        },
+		{
+            "name": "Character Counter",
+            "author": "Jiiks, square",
+            "description": "Adds a character counter to channel textarea.",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/charCounter.plugin.js"
+        },
+		{
+            "name": "Copy Code",
+            "author": "Unknown",
+            "description": "Lets you copy code from a code block.",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/copyCode.plugin.js"
+        },
+		{
+            "name": "GMedia",
+            "author": "gn0mesort",
+            "description": "Adds support for HTML5 media files. Now includes looping audio/video. Based on mediaSupport.plugin.js",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/GMedia.plugin.js"
+        },
+		{
+            "name": "Owner Tags",
+            "author": "noodlebox",
+            "description": "Show a tag next to a server owner's name",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/OwnerTag.plugin.js"
+        },
+		{
+            "name": "Quoter",
+            "author": "Samogot & Hammock & Natsulus",
+            "description": "Reply to people with a button, quoting full message or selected text",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/plugins/quote.plugin.js"
         }
     ],
     "themes": [
-        {
+		{
+            "name": "Beard",
+            "author": "Unknown",
+            "description": "Beard Theme",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/beard.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Bigger Emojis",
+            "author": "natsu#1863",
+            "description": "Bigger emojis in chat",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/biggeremoji.theme.css",
+            "preview": ""
+        },
+		{
             "name": "ClearVision Amethyst",
             "author": "Zerthox",
             "description": "A mystical, purple theme with customizable colors & background!",
             "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/ClearVision_Amethyst.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "ClearVision Emerald",
+            "author": "Zerthox",
+            "description": "A peaceful, green theme with customizable colors & background!",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/ClearVision_Emerald.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "ClearVision Ruby",
+            "author": "Zerthox",
+            "description": "A raging, red theme with customizable colors & background!",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/ClearVision_Ruby.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "ClearVision Sapphire",
+            "author": "Zerthox",
+            "description": "A chilly, blue theme with customizable colors & background!",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/ClearVision_Sapphire.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Compact+",
+            "author": "ElitePrime",
+            "description": "Makes some things a bit compact",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/Compact.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "COMPOZY",
+            "author": "Swan Song (@SonataSwanSong)",
+            "description": "Compozy is a tasteful modification of the default theme that aims to maintain Discord's cleanliness and breathability, while slimming down on most of the oversized elements and wasteful negative space. Supports both Light/Dark modes and Cozy/Compact modes.",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/Compozy.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Dark Matter",
+            "author": "A cold, dark & frosty theme",
+            "description": "Hammock (CosmicSalad)",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/DarkMatter.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Dark Blue Theme",
+            "author": "redslime",
+            "description": "Dark, blue theme for BetterHummus",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/blue.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Dark Purple",
+            "author": "ElitePrime",
+            "description": "A theme that's dark, but also PURPLE!!! :)",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/DarkPurpleHummus.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Rounded Glass",
+            "author": "Megamit",
+            "description": "A simple theme to satisfy that make it easy to swap out the background",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/Discord_Rounded_Glass.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "ExotiCNova",
+            "author": "Phil (Katana)",
+            "description": "Dark Theme with the ability to add your own background if you choose so. Built-in Theme Fixer by Gimo.",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/ExotiCNova.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Hacker Theme",
+            "author": "Unknown",
+            "description": "A green \"Hacker\" Theme",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/hacker-nobg.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Hummus Amoled",
+            "author": "ElitePrime",
+            "description": "Fully black theme.",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/Hummus_Amoled.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Orange Family",
+            "author": "Bibitor31",
+            "description": "Orange",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/Orangefamily.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Draknessu",
+            "author": "Haqz",
+            "description": "Dark theme",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/playen.theme.css",
+            "preview": ""
+        },
+		{
+            "name": "Space family",
+            "author": "Bibitor31",
+            "description": "Space",
+            "url": "https://raw.githubusercontent.com/nilenta/dostuf/main/betterrepo/themes/Space_family.theme.css",
             "preview": ""
         }
     ]

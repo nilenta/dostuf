@@ -33,7 +33,7 @@ GMedia.prototype = {
         let metaDataElement = $(`<div class="metadata gnomesort-metadata" style="font-size: 11px; color: gray"><a href="${href}" style="font-size: 11px; display: inline" handled.gnomesort.media="true">${fileName}</a> - ${type} - ${loopControl}</div>`) // The metadata for a file
         let metaData = null // The actual metadata element
         let data = null // The audio/video element
-        if (type === 'mp4' || type === 'webm') { // If video
+        if (type === 'mp4' || type === 'webm' || type === 'mov' || type === 'mkv') { // If video
           data = $(`<video style="height: 320px; width: 30vw;" src="${encodeURI(href)}" type="video/${type}" controls=""></video>`) // Create video element
         } else if (type === 'mpeg' || type === 'ogg' || type === 'wav') { // If audio
           data = $(`<audio src="${encodeURI(href)}" type="audio/${type}" controls=""></audio>`) // Create audio element

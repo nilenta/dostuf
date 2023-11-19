@@ -1,0 +1,59 @@
+//META{"name":"DarkPurple","description":"A theme that's dark, but also PURPLE!!! :)","author":"ElitePrime","version":"1.0"}*//{}
+
+.theme-dark .guilds-wrapper {
+    background: #08070a;
+}
+.theme-dark .account {
+    height: 70px;
+    background: #0e0c11;
+}
+.theme-dark .channel-members {
+    background-color: #0e0c11;
+}
+.theme-dark .guild-channels {
+    background-color: #121016;
+}
+.theme-dark .guild-channels .channel-text.selected {
+        background: linear-gradient(to right, #272727 85%, #272727);
+}
+.theme-dark .chat .title-wrap {
+    background-color: #15131a;
+    border-bottom: 0px solid #0e0c11
+}
+.theme-dark .guild-header header {
+    background-color: #0e0c11;
+}
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
+    background-color: #15131a;
+}
+.guild-channels .channel-text.selected:before {
+    border-left: 4px solid #fff;
+}
+.guild-inner {
+background-color: #000;
+}
+.channel-textarea-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 12px 10px;
+      border-radius: 2px 0 0 2px;
+    border: 2px solid #121016;
+    box-sizing: border-box;
+}
+.theme-dark .search .search-bar {
+    background-color: #121016;
+}
+.theme-dark #friends .friends-header {
+    background-color: #0e0c11
+}
+.search-bar {
+    background-color: #121016;
+}
+.private-channels {
+    background-color: #121016
+}
+friends .friends-table {
+    margin-top: 0px;
+}
